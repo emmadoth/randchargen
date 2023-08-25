@@ -4,6 +4,7 @@
 #include "charset.h"
 #include "charsets.h"
 
+/* calculates the length of the to-be-built character set, based on the user's choices */
 size_t get_charset_length(char charsets[NCHARSETS])
 {
         size_t length = 0;
@@ -31,6 +32,7 @@ size_t get_charset_length(char charsets[NCHARSETS])
         return length;
 }
 
+/* builds the character set to take characters from */
 void create_charset(char charsets[NCHARSETS], size_t length, char charset[length])
 {
         for(size_t i = 0; i < NCHARSETS; ++i)

@@ -2,6 +2,7 @@
 #ifndef charsets_h
 #define charsets_h
 
+/* character sets live here */
 char LOWERCASE[] = "abcdefghijklmnopqrstuvwxyz";
 char UPPERCASE[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char NUMBERS  [] = "0123456789";

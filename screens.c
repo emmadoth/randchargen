@@ -3,6 +3,7 @@
 
 #include "common.h"
 
+/* length selection screen */
 void length_screen(size_t* length)
 {
         clear();
@@ -12,6 +13,7 @@ void length_screen(size_t* length)
         scanw("%zu", length);
 }
 
+/* character set selection screen */
 void charset_screen(char charsets[NCHARSETS])
 {
         clear();
@@ -27,6 +29,7 @@ void charset_screen(char charsets[NCHARSETS])
                 charsets[i] = '\0';
 }
 
+/* results screen */
 void final_screen(size_t length, char string[length], size_t charset_length, char charset[charset_length], _Bool* regen, _Bool* run)
 {
         noecho();
