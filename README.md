@@ -1,14 +1,14 @@
 # What
-True random string generator with an ncurses TUI, using RDSEED.
+True random string generator with an ncurses TUI, using RDRAND.
 # Prerequisites
-You need either Clang or GCC, and GNU Make, ncurses, and a CPU that supports the RDSEED instruction.
+You need either Clang or GCC, and GNU Make, ncurses, and a CPU that supports the RDRAND instruction.
 Acquire the aforementioned packages from the package manager of your chosen distro.
 
-You may test if your CPU supports RDSEED with
+You may test if your CPU supports RDRAND with
 ```
-grep --color=always rdseed /proc/cpuinfo | head -n1
+grep --color=always rdrand /proc/cpuinfo | head -n1
 ```
-if supported, the output should be a bunch of flags with RDSEED highlighted.
+if supported, the output should be a bunch of flags with RDRAND highlighted.
 
 # Compile
 ```
