@@ -1,7 +1,7 @@
 # What
 True random string generator with an ncurses TUI, using RDSEED.
 # Prerequisites
-You need either Clang or GCC, GNU Make, ncurses, and a CPU that supports the RDSEED instruction.
+You need either Clang or GCC, and GNU Make, ncurses, and a CPU that supports the RDSEED instruction.
 Acquire the aforementioned packages from the package manager of your chosen distro.
 
 You may test if your CPU supports RDSEED with
