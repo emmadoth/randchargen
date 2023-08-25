@@ -29,6 +29,7 @@ void charset_screen(char charsets[NCHARSETS])
 
 void final_screen(size_t length, char string[length], size_t charset_length, char charset[charset_length], _Bool* regen, _Bool* run)
 {
+        noecho();
         clear();
         printw("Character set: %.*s", (int)charset_length, charset);
         mvprintw(1, 0, "Length: %zu", length);
@@ -59,5 +60,6 @@ void final_screen(size_t length, char string[length], size_t charset_length, cha
                                 break;
                 }
         }
+        echo();
 }
 
