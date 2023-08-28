@@ -1,8 +1,8 @@
-global rdrand32
+global rdrand
 
 section .text
-rdrand32:
+rdrand:
         rdrand eax
-        jnc rdrand32
+        jnc rdrand
         ret
 

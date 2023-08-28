@@ -61,6 +61,6 @@ void create_charset(char charsets[NCHARSETS], size_t length, char charset[length
 void generate_string(size_t length, char string[length], size_t charset_length, char charset[charset_length])
 {
         for(unsigned int i = 0; (size_t)i < length; ++i)
-                string[i] = charset[rdrand32() % charset_length];
+                string[i] = charset[rdrand() % charset_length];
 }
 

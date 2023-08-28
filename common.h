@@ -6,6 +6,6 @@
 #define NCHARSETS 4
 
 /* external definition for the rdseed assembly function */
-extern int rdrand32();
+extern int rdrand();
 
 #endif // common_h
