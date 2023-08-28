@@ -1,7 +1,7 @@
 # What
 True random string generator with an ncurses TUI, using RDRAND.
 # Prerequisites
-You need either Clang or GCC, and GNU Make, ncurses, and a CPU that supports the RDRAND instruction.
+You need either Clang or GCC, and GNU Make, NASM, ncurses, and a CPU that supports the RDRAND instruction.
 Acquire the aforementioned packages from the package manager of your chosen distro.
 
 You may test if your CPU supports RDRAND with
